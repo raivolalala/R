@@ -1,4 +1,4 @@
-# contact me at lallo.raivo@gmail.com!
+# Contact me at lallo.raivo@gmail.com!
 library(RMySQL)
 library(tictoc)
 
@@ -10,6 +10,7 @@ connection = dbConnect(
   dbname = '',
   host = '')
 
+# Pick your own name for your text file!
 tables.list <- dbListTables(connection)
 for (i in tables.list) {
   sink("your_text_file.txt", split = TRUE, append = TRUE)
