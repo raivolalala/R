@@ -2,7 +2,7 @@
 title: README
 author: Raivo Lallo
 email: raivo.lallo@protonmail.com
-output: word_document
+output: pdf_document
 ---
 
 # Personal R scripts
