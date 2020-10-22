@@ -1,10 +1,10 @@
 library(RODBC)
-
-sqlServer <- c("raivoclout.database.windows.net")	#Enter Azure SQL Server
-sqlDatabase <- c("fromPS") 	               		#Enter Database Name
-sqlUser <- c("admraivo")             			#Enter the SQL User ID
-sqlPassword <- c("$dmR4!v0")        			#Enter the User Password
-sqlDriver <- c("SQL Server")        			#Leave this Drive Entry
+creds <- read.csv('~/Documents/Creds/azure_server_creds', header = FALSE)
+sqlServer <- creds[1,2]
+sqlDatabase <- creds[2,2]
+sqlUser <- creds[3,2]
+sqlPassword <- creds[4,2]
+sqlDriver <- creds[5,2]
 
 conn_string <- paste0(
   "Driver=", sqlDriver,
