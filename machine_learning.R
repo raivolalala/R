@@ -15,10 +15,10 @@ y <- dataset[,5]
 
 # Univariate plots
 # Boxplot for each attribute on one image
-#par(mfrow=c(1,4))
-#for(i in 1:4) {
-#	boxplot(x[,i], main = names(iris)[i])
-#}
+par(mfrow=c(1,4))
+for(i in 1:4) {
+	boxplot(x[,i], main = names(iris)[i])
+}
 
 # Barplot for class breakdown
 #plot(y)
@@ -28,5 +28,5 @@ y <- dataset[,5]
 #featurePlot(x=x, y=y, plot="ellipse")
 
 # Box and whisker plots for each attribute
-featurePlot(x=x, y=y, plot="box")
+#featurePlot(x=x, y=y, plot="box")
 ################################################ Visuals end
