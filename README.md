@@ -2,6 +2,9 @@ Personal R scripts
 ==================
 
 -   **database scanner** (for now)
+-   **machine learning stuff** (for now)
+-   **regex training** (for now)
+-   **some azure bullshittery** (for now)
 -   **README file**
 
 Note that all scripts published here are made by a complete noob. My
