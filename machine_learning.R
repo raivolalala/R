@@ -24,14 +24,16 @@ y <- dataset[,5]
 #plot(y)
 
 ##################### Multivariate plots
-# TODO: ok, featurePlot works when wrapped with print(), dunno why.
-# In RStudio it doesn't need print().
+# TODO: ok, featurePlot for "box" works when wrapped with print(), dunno why.
 
 # Scatterplot matrix
-# TODO: below func breaks.
-#print(featurePlot(x=x, y=y, plot="ellipse"))
+# Func below breaks...
+#print(featurePlot(x=x, y=y, plot="ellipse", auto.key=list(columns=3)))
 
 # Box and whisker plots for each attribute
 print(featurePlot(x=x, y=y, plot="box"))
+
+# Below func returns NULL...
+#print(featurePlot(x=x, y=y, plot="scatter"))
 
 ################################################ Visuals end
