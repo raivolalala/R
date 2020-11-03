@@ -20,7 +20,7 @@ y <- dataset[,5]
 #}
 
 # Barplot for class breakdown
-#plot(y)
+plot(y)
 
 ##################### Multivariate plots
 # Scatterplot matrix
@@ -28,9 +28,9 @@ y <- dataset[,5]
 #print(featurePlot(x=x, y=y, plot="ellipse", auto.key=list(columns=3)))
 
 # TODO: works only when put in print atrocity...
-print(featurePlot(x=x, y=y, plot="box"))
+#print(featurePlot(x=x, y=y, plot="box"))
 
 # TODO: Below func returns NULL...
-#print(featurePlot(x=x, y=y, plot="scatter"))
+#featurePlot(x=x, y=y, plot="scatter")
 
 ################################################ Visuals end
