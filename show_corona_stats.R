@@ -1,15 +1,10 @@
-ds1 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-10-21", header = FALSE, sep = ":")
-ds2 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-10-22", header = FALSE, sep = ":")
-ds3 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-10-23", header = FALSE, sep = ":")
-ds4 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-10-24", header = FALSE, sep = ":")
-ds5 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-10-25", header = FALSE, sep = ":")
-ds6 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-10-26", header = FALSE, sep = ":")
-ds7 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-10-27", header = FALSE, sep = ":")
-ds8 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-10-28", header = FALSE, sep = ":")
-ds9 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-10-29", header = FALSE, sep = ":")
-ds10 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-10-30", header = FALSE, sep = ":")
-ds11 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-10-31", header = FALSE, sep = ":")
-ds11 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-11-01", header = FALSE, sep = ":")
-ds11 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-11-02", header = FALSE, sep = ":")
-ds11 <- read.csv2(file = "~/Documents/COVID19_data/corona_2020-11-03", header = FALSE, sep = ":")
-print(ds10[-1,])
+##################### Normal approach
+filenames <- list.files(path = '~/Documents/COVID19_data', full.names = TRUE)
+data <- sapply(
+	       filenames, 
+	       function(x){
+		       read.csv2(x, header = FALSE, sep = ":")
+	       }
+	)
+
+print(data[,5])
