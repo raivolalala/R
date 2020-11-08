@@ -7,4 +7,4 @@ data <- sapply(
 	       }
 	)
 
-print(data[,5])
+print(data[,19])
